@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flappy Bird Game</title>
+    <link rel = "stylesheet" href = "../assets/style.css"/>
+</head>
+<body>
+
+<div class = "container">
+<h1> Sarah's flappy kitty!</h1>
+
+    </div>`
+<div id="game"> </div>
+
+<div id = "greeting">
+     <h2> Save your score!</h2>
+    <form id = "greeting-form" method = "post" action = "/score">
+        <div class = "form-group">
+            <p>
+        <label for = "fullName"> What's your name?</label>
+        <input type = "text" id = "fullName"
+               name="fullName" class = "form-control" placeholder = "E.g Kitty" required>
+                </p>
+
+            <label for = "email"> What's your email?</label>
+            <input type = "email" id = "email"
+                   name="email" class = "form-control" placeholder = "E.g APerson@email.com" required>
+
+            <input type = "hidden" id = "score" name = "score" value = "0">
+
+
+
+        </div>
+        <button class = "btn btn-default" type = "submit">OK</button>
+    </form>
+
+
+</div>
+
+<p> The current highscores are: </p>
+
+<ol id = "scoreBoard">
+
+</ol>
+
+
+<script src="../lib/jquery.js"></script>
+<script type="text/javascript" src="../lib/phaser.min.js"></script>
+<script type="text/javascript" src="../js/flappy.js"></script>
+</body>
+</html>

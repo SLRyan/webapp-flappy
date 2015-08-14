@@ -1,0 +1,56 @@
+//This page is only used for comments
+
+
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Flappy Bird Game</title>
+    <link rel = "stylesheet" href = "../assets/style.css"/>
+</head>
+<body>
+
+<h1> Sarah's flappy kitty!</h1>
+
+<div id="game"> </div>
+
+<div id = "greeting">
+    //The method is to POST a request (ask) to the server.
+    //We also ask the form to send the information to the url /score
+    <form id = "greeting-form" method = "post" action = "/score" class="form-inline"> //inline makes form appear in a line
+
+        <div class = "form-group">
+            <label for = "fullName"> What's your name?</label> //Represents a caption
+            <input type = "text" id = "fullName"
+                   name=fullName" class = "form-control" placeholder = "E.g Kitty"> //Input is Used to gather data
+            //placeholder is shown temporaily in the input box until the user enters something
+
+            <label for = "email"> What's your email?</label>
+            <input type = "email" id = "email"
+                   name=email" class = "form-control" placeholder = "E.g APerson@email.com">
+
+            //this field holds information but is not shown to the user
+            <input type = "hidden" id = "score" name = "score" value = "0">
+
+
+
+        </div>
+        <button type = "submit">OK</button> //Clickable button //the type submit means that the button will submit the form
+    </form>
+
+
+</div>
+
+<p> The current highscores are: </p>
+
+<ol>
+    <li class = "top"> Me </li>
+    <li class = "score"> Others....</li>
+</ol>
+
+<script src="../lib/jquery.js"></script> //Imports JQuery
+<script type="text/javascript" src="../lib/phaser.min.js"></script> //Phaser game library imported
+<script type="text/javascript" src="../js/flappy.js"></script> //Our flappy bird game import
+</body>
+</html>

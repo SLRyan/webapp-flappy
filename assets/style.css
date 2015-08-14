@@ -1,0 +1,24 @@
+h1{
+color: mediumpurple;
+    font-size: 50px;
+    text-align: center;
+    font-style: italic;
+}
+
+#gameLink {
+    text-align: center;
+    font-size: 30px;
+}
+
+#greeting{
+    display: none;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    background: #fff;
+    width: 350px;
+    height: 250px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+}
